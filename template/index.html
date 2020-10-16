@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <title> Thornes   
+        </title>
+    </head>
+
+    <body>
+        <div class= "grid-container">
+            <header class="header">
+                <div class="brand">
+                    <button onclick="openMenu()">
+                      &#9776;  
+                    </button>
+                    <a href="index.html">Thornes</a>
+                </div>
+                <div class="header-links">
+                    <a herf="cart.html">Cart</a>
+                    <a herf="sign-in.html">sign-in</a>
+                </div>
+            </header>
+            <aside class="sidebar">
+                <h3> Shopping Categories</h3>
+                <button class="sidebar-close-button" onclick="closeMenu()">x</button>
+                <u>
+                    <li>
+                        <a href="index.html">Food</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Other</a>
+                    </li>
+                </u>
+            </aside>
+            <main class="main">
+                <div class="content">
+                <ul class="products">
+                    <li> 
+                        <div class="product">
+                            <img class= "products-image" src="images/d1.jpg" alt="product"></img>
+                            <div class="product-name">
+                                <a href="product.html">Biscuits</a></div>
+                            <div class="product-brand">Mcvities</div>
+                            <div class="product-price">£15</div>
+                            <div class="product-rating">3.5 Stars (10 Reviews)</div>                      
+                    </li>
+                    <li> 
+                        <div class="product">
+                            <img class= "products-image" src="images/d2.jpg" alt="product"></img>
+                            <div class="product-name">
+                                <a href="product.html">Fruit & Veg</a></div>
+                            <div class="product-brand">Thornes Strawberries</div>
+                            <div class="product-price">£25</div>
+                            <div class="product-rating">3.5 Stars (10 Reviews)</div>                      
+                    </li>
+                    <li> 
+                        <div class="product">
+                            <img class= "products-image" src="images/d3.jpg" alt="product"></img>
+                            <div class="product-name">
+                                <a href="product.html">Coffee & Tea</a></div>
+                            <div class="product-brand">Yorkshire Tea</div>
+                            <div class="product-price">£10</div>
+                            <div class="product-rating">3.5 Stars (10 Reviews)</div>                      
+                    </li>
+                    <li> 
+                        <div class="product">
+                            <img class= "products-image" src="images/d4.jpg" alt="product"></img>
+                            <div class="product-name">
+                                <a href="product.html">Dairy</a></div>
+                            <div class="product-brand">Milk</div>
+                            <div class="product-price">£5</div>
+                            <div class="product-rating">3.5 Stars (10 Reviews)</div>                      
+                    </li>
+                    <li> 
+                        <div class="product">
+                            <img class= "products-image" src="images/d5.jpg" alt="product"></img>
+                            <div class="product-name">
+                                <a href="product.html">Beer & Cider</a></div>
+                            <div class="product-brand">Cider</div>
+                            <div class="product-price">£12</div>
+                            <div class="product-rating">3.5 Stars (10 Reviews)</div>                      
+                    </li>
+                    <li> 
+                        <div class="product">
+                            <img class= "products-image" src="images/d6.jpg" alt="product"></img>
+                            <div class="product-name">
+                                <a href="product.html">Gifts</a></div>
+                            <div class="product-brand">Key Chain</div>
+                            <div class="product-price">£3</div>
+                            <div class="product-rating">3.5 Stars (10 Reviews)</div>                      
+                    </li>
+                </ul>
+                </div>
+            </main>
+            <footer class="footer">
+                All right reserved.
+            </footer>
+        </div>
+        <script>
+            function openMenu(){
+                document.querySelector(".sidebar").classList.add("open")
+            }
+            function closeMenu(){
+                document.querySelector(".sidebar").classList.remove("open")
+            }
+        </script>
+    </body>
+</html>
